@@ -28,7 +28,7 @@ Edit your `yourRepo/.git/config` and add the following:
         mode = reduce
         pattern = "h,s"
         limit = 16-20
-        database_path = /path/to/your/database.db
+        databasepath = /path/to/your/database.db
 ```
 + password -> your password
 + mode
@@ -43,7 +43,7 @@ Edit your `yourRepo/.git/config` and add the following:
     + m = minute
     + s = second
 + limit -> ensure that commits are placed in a certain time frame
-+ database_path -> path to your database
++ databasepath -> path to your database
 
 The post-commit will disable itself to prevent a loop this will trigger git to warn you that the hook was ignored.
 To disable that add the following:
